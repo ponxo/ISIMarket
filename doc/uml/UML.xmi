@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI verified="false" xmi.version="1.2" timestamp="2012-12-18T02:34:10" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
+<XMI verified="false" xmi.version="1.2" timestamp="2012-12-18T17:04:41" xmlns:UML="http://schema.omg.org/spec/UML/1.3">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://uml.sf.net</XMI.exporter>
@@ -73,10 +73,10 @@
         <UML:Attribute visibility="public" isSpecification="false" xmi.id="aPzppXexVZQd" type="S2a36d3CnoXa" name="Stock"/>
         <UML:Attribute visibility="public" isSpecification="false" xmi.id="cu5PltnV8AzK" type="qPW9Pu8yAQPT" name="Nombre"/>
         <UML:Attribute visibility="public" isSpecification="false" xmi.id="HFlNWaytXnh4" type="qPW9Pu8yAQPT" name="Categoría"/>
-        <UML:Attribute visibility="public" isSpecification="false" xmi.id="PeXy485e3A3o" type="qPW9Pu8yAQPT" name="Sugeridos"/>
         <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="7zESERDbxmZp" name="validates_uniqueness_of :Id_producto"/>
         <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="zeGsDny37Lpx" name="has_many :contienen"/>
         <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="3rv7OYjrGdKd" name="has_many :aplican"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="3KhzPhJFYQfN" name="has_many :sugeridos"/>
        </UML:Classifier.feature>
       </UML:Class>
       <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="3DHp4XNKMzga" name="Crean">
@@ -177,10 +177,28 @@
         <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="DFyCMGuBGuSK" type="Qr5o2ZQMFayb" name="" aggregation="none"/>
        </UML:Association.connection>
       </UML:Association>
+      <UML:Class visibility="public" isSpecification="false" namespace="Logical View" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="cqMVfz0DNkrq" name="Sugeridos">
+       <UML:Classifier.feature>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="pr8SrXRTkFu7" name="belongs_to :productos"/>
+        <UML:Operation visibility="public" isSpecification="false" isQuery="false" isAbstract="false" isLeaf="false" isRoot="false" xmi.id="kydIqBiElRHx" name="validates_uniqueness_of :Id_producto"/>
+       </UML:Classifier.feature>
+      </UML:Class>
+      <UML:Association visibility="public" isSpecification="false" namespace="Logical View" xmi.id="KFzIfgZuCzZZ" name="">
+       <UML:Association.connection>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="vdOav5Jtibjs" type="cQ9EEAEZLeoc" name="" aggregation="none"/>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="IvbjCY1VoynR" type="cqMVfz0DNkrq" name="" aggregation="none"/>
+       </UML:Association.connection>
+      </UML:Association>
+      <UML:Association visibility="public" isSpecification="false" namespace="Logical View" xmi.id="eMLqKsOFVknO" name="">
+       <UML:Association.connection>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="q6FWgyMytyf4" type="cqMVfz0DNkrq" name="" aggregation="none"/>
+        <UML:AssociationEnd changeability="changeable" visibility="public" isNavigable="true" isSpecification="false" xmi.id="UfXGdKhIe26w" type="cQ9EEAEZLeoc" name="" aggregation="none"/>
+       </UML:Association.connection>
+      </UML:Association>
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams>
-       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="510" canvaswidth="1136" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="83" xmi.id="oSHvS1t5wRAq" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
+       <diagram showopsig="1" linecolor="#ff0000" snapx="10" showattribassocs="1" snapy="10" linewidth="0" showattsig="1" isopen="1" showpackage="1" showpubliconly="1" showstereotype="1" name="class diagram" font="Sans Serif,9,-1,0,50,0,0,0,0,0" canvasheight="553" canvaswidth="1289" localid="-1" snapcsgrid="0" showgrid="0" showops="1" griddotcolor="#000000" backgroundcolor="#ffffff" usefillcolor="1" fillcolor="#ffff00" zoom="75" xmi.id="oSHvS1t5wRAq" documentation="" showscope="1" snapgrid="0" showatts="1" type="1">
         <widgets>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="13" showattsigs="601" showstereotype="1" y="165" showattributes="1" font="Sans Serif,9,-1,5,75,0,0,0,0,0" width="283" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="lbEZ51uDdq12" showscope="1" height="154" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="420" showattsigs="601" showstereotype="1" y="52" showattributes="1" font="Sans Serif,9,-1,5,75,0,0,0,0,0" width="285" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="KASFHOPhmqFa" showscope="1" height="105" showopsigs="601"/>
@@ -191,6 +209,7 @@
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="401" showattsigs="601" showstereotype="1" y="232" showattributes="1" font="Sans Serif,9,-1,5,75,0,0,0,0,0" width="259" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="JiBeMxEN9WAB" showscope="1" height="77" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="778" showattsigs="601" showstereotype="1" y="211" showattributes="1" font="Sans Serif,9,-1,5,75,0,0,0,0,0" width="259" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="1YVNV9vlDQpq" showscope="1" height="77" showopsigs="601"/>
          <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="869" showattsigs="601" showstereotype="1" y="352" showattributes="1" font="Sans Serif,9,-1,5,75,0,0,0,0,0" width="241" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="Qr5o2ZQMFayb" showscope="1" height="84" showopsigs="601"/>
+         <classwidget linecolor="#ff0000" usesdiagramfillcolor="0" linewidth="none" showoperations="1" usesdiagramusefillcolor="0" showpubliconly="1" showpackage="1" x="1026" showattsigs="601" showstereotype="1" y="69" showattributes="1" font="Sans Serif,9,-1,5,75,0,0,0,0,0" width="259" isinstance="0" usefillcolor="1" fillcolor="#ffff00" xmi.id="cqMVfz0DNkrq" showscope="1" height="49" showopsigs="601"/>
         </widgets>
         <messages/>
         <associations>
@@ -248,6 +267,18 @@
            <endpoint endx="898" endy="352"/>
           </linepath>
          </assocwidget>
+         <assocwidget indexa="1" indexb="1" usesdiagramusefillcolor="0" widgetaid="cQ9EEAEZLeoc" usesdiagramfillcolor="0" fillcolor="#000000" linecolor="none" totalcounta="3" xmi.id="KFzIfgZuCzZZ" widgetbid="cqMVfz0DNkrq" totalcountb="3" type="503" usefillcolor="1" linewidth="none">
+          <linepath>
+           <startpoint startx="1004" starty="69"/>
+           <endpoint endx="1026" endy="69"/>
+          </linepath>
+         </assocwidget>
+         <assocwidget indexa="2" indexb="2" usesdiagramusefillcolor="0" widgetaid="cqMVfz0DNkrq" usesdiagramfillcolor="0" fillcolor="#000000" linecolor="none" totalcounta="3" xmi.id="eMLqKsOFVknO" widgetbid="cQ9EEAEZLeoc" totalcountb="3" type="503" usefillcolor="0" linewidth="none">
+          <linepath>
+           <startpoint startx="1026" starty="69"/>
+           <endpoint endx="1004" endy="69"/>
+          </linepath>
+         </assocwidget>
         </associations>
        </diagram>
       </diagrams>
@@ -269,7 +300,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="oSHvS1t5wRAq" uniqueid="fCBUSoo57jIM" documentation=""/>
+  <docsettings viewid="oSHvS1t5wRAq" uniqueid="UfXGdKhIe26w" documentation=""/>
   <listview>
    <listitem open="1" type="800" id="Views">
     <listitem open="1" type="821" id="Component View"/>
@@ -348,12 +379,12 @@
       <listitem open="0" type="814" id="lBOYZuguRwlz"/>
       <listitem open="0" type="815" id="3rv7OYjrGdKd"/>
       <listitem open="0" type="815" id="zeGsDny37Lpx"/>
+      <listitem open="0" type="815" id="3KhzPhJFYQfN"/>
       <listitem open="0" type="814" id="7mmJScjOALEc"/>
       <listitem open="0" type="814" id="cu5PltnV8AzK"/>
       <listitem open="0" type="814" id="koG31OU8AEQa"/>
       <listitem open="0" type="814" id="p9yxVAZEJyms"/>
       <listitem open="0" type="814" id="aPzppXexVZQd"/>
-      <listitem open="0" type="814" id="PeXy485e3A3o"/>
       <listitem open="0" type="815" id="7zESERDbxmZp"/>
      </listitem>
      <listitem open="1" type="813" id="G3W6f04FOBTc">
@@ -364,6 +395,10 @@
       <listitem open="0" type="814" id="l8IRVFuBUrBR"/>
       <listitem open="0" type="814" id="sCpf6Uk543Wu"/>
       <listitem open="0" type="815" id="LiMovEzP68p2"/>
+     </listitem>
+     <listitem open="1" type="813" id="cqMVfz0DNkrq">
+      <listitem open="0" type="815" id="pr8SrXRTkFu7"/>
+      <listitem open="0" type="815" id="kydIqBiElRHx"/>
      </listitem>
     </listitem>
     <listitem open="1" type="802" id="Use Case View"/>
