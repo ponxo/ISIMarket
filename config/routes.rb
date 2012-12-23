@@ -1,4 +1,10 @@
 ISIMarket::Application.routes.draw do
+  
+  match '/login' => 'sessions#login'
+  resources :productos
+  resources :recetas
+  resources :cliente
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
