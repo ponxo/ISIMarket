@@ -1,4 +1,5 @@
 class Receta < ActiveRecord::Base
-   attr_accessible :id, :titulo, :preparacion, :puntuacion
-   validates_uniqueness_of :id
+   attr_accessible :titulo, :preparacion, :puntuacion
+   # id(natural) es id(clave surrogada)
+   # validates_uniqueness_of :id
 end
