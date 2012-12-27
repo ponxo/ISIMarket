@@ -1,6 +1,6 @@
 have_struct_member: checking for rb_method_entry_t.body in method.h... -------------------- no
 
-"gcc -o conftest -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+"gcc -o conftest -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS conftest.c  -L. -L/usr/local/lib -Wl,-R/usr/local/lib -L.  -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/usr/local/lib -L/usr/local/lib -lruby-static  -lpthread -lrt -ldl -lcrypt -lm   -lc"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -8,10 +8,9 @@ checked program was:
 3: int main() {return 0;}
 /* end */
 
-"gcc -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS   -c conftest.c"
-conftest.c:3:20: error: method.h: No existe el fichero o el directorio
-conftest.c:7: error: ‘rb_method_entry_t’ undeclared here (not in a function)
-conftest.c:7: error: expected expression before ‘)’ token
+"gcc -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS   -c conftest.c"
+conftest.c:3: fatal error: method.h: No existe el fichero o el directorio
+compilation terminated.
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -27,8 +26,9 @@ checked program was:
 
 have_header: checking for vm_core.h... -------------------- no
 
-"gcc -E -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64   -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
-conftest.c:3:21: error: vm_core.h: No existe el fichero o el directorio
+"gcc -E -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I.     -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+conftest.c:3: fatal error: vm_core.h: No existe el fichero o el directorio
+compilation terminated.
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -40,7 +40,7 @@ checked program was:
 
 have_struct_member: checking for rb_method_entry_t.body in method.h... -------------------- no
 
-"gcc -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS   -c conftest.c"
+"gcc -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS   -c conftest.c"
 conftest.c:7: error: ‘rb_method_entry_t’ has no member named ‘body’
 checked program was:
 /* begin */
@@ -57,7 +57,7 @@ checked program was:
 
 have_header: checking for vm_core.h... -------------------- yes
 
-"gcc -E -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -69,7 +69,7 @@ checked program was:
 
 have_header: checking for iseq.h... -------------------- yes
 
-"gcc -E -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -81,7 +81,7 @@ checked program was:
 
 have_header: checking for insns.inc... -------------------- yes
 
-"gcc -E -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -93,7 +93,7 @@ checked program was:
 
 have_header: checking for insns_info.inc... -------------------- yes
 
-"gcc -E -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -105,7 +105,7 @@ checked program was:
 
 have_header: checking for eval_intern.h... -------------------- yes
 
-"gcc -E -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
+"gcc -E -I/usr/local/include/ruby-1.9.1/x86_64-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -I/usr/local/include/ruby-1.9.1/ruby-1.9.2-p290  -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wno-long-long -DRB_ISEQ_COMPILE_6ARGS  conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"

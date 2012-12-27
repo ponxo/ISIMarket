@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["R. Bernstein"]
-  s.date = "2011-12-16"
+  s.date = "2011-12-17"
   s.description = "\nIn showing a long lists, sometimes one would prefer to see the value\narranged aligned in columns. Some examples include listing methods\nof an object or debugger commands. \nSee Examples in the rdoc documentation for examples.\n"
   s.email = "rockyb@rubyforge.net"
   s.extra_rdoc_files = ["README.md", "lib/columnize.rb", "COPYING"]
