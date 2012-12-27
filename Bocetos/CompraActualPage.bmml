@@ -1,0 +1,71 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="905" measuredH="736" mockupW="617" mockupH="495">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="288" y="241" w="617" h="495" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::DataGrid" x="377" y="411" w="-1" h="-1" measuredW="297" measuredH="53" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Producto%20%5E%2C%20Precio%2CCantidad%20%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0AArroz%2C%200.80%2C</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="656" y="671" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>A%F1adirReceta%26bm%3BA%F1adirReceta.bmml%26bm%3BA%F1adirReceta.bmml%26bm%3BA%F1adirReceta.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22368%2C430%2C457%2C451%22%20href%3D%22A%25C3%25B1adirReceta.bmml%22%20alt%3D%22A%F1adirReceta%22%20id%3D%2212%22/%3E</map>
+        <text>A%F1adir%20Receta</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Link" x="608" y="671" w="-1" h="-1" measuredW="37" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pepe</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Link" x="850" y="671" w="-1" h="-1" measuredW="30" measuredH="21" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Salir</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="535" y="336" w="-1" h="-1" measuredW="109" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>Compra%20Actual</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::TextInput" x="519" y="431" w="40" h="-1" measuredW="22" measuredH="27" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>3</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::Link" x="587" y="434" w="-1" h="-1" measuredW="78" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Borrar%20Arroz</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Button" x="689" y="437" w="-1" h="-1" measuredW="80" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Actualizar</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Button" x="378" y="505" w="-1" h="-1" measuredW="74" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>PerfilPage%26bm%3BPerfilPage.bmml%26bm%3BPerfilPage.bmml%26bm%3BPerfilPage.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%2290%2C264%2C164%2C291%22%20href%3D%22PerfilPage.bmml%22%20alt%3D%22PerfilPage%22%20id%3D%2225%22/%3E</map>
+        <text>Comprar</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::Label" x="377" y="473" w="-1" h="-1" measuredW="79" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Total%3A%202.40%u20AC</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::Link" x="754" y="671" w="-1" h="-1" measuredW="87" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>ProductsPageC%26bm%3BProductsPageC.bmml%26bm%3BProductsPageC.bmml%26bm%3BProductsPageC.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22466%2C430%2C553%2C451%22%20href%3D%22ProductsPageC.bmml%22%20alt%3D%22ProductsPageC%22%20id%3D%2227%22/%3E</map>
+        <text>Ir%20a%20Productos</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
