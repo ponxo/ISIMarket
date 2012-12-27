@@ -1,1 +1,9 @@
-%h2 Página de las recetas
+%h2 Recetas
+
+%table#recetas
+  %tbody
+    - @recetas.each do |receta|
+      %tr
+        %td= receta.titulo 
+        %td= receta.preparacion
+        %td= receta.puntuacion
