@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Austin Ziegler, Mauricio Ferna'ndez"]
-  s.date = "2008-02-25"
+  s.date = "2008-02-26"
   s.description = "Archive::Tar::Minitar is a pure-Ruby library and command-line utility that provides the ability to deal with POSIX tar(1) archive files. The implementation is based heavily on Mauricio Ferna'ndez's implementation in rpa-base, but has been reorganised to promote reuse in other projects."
   s.email = "minitar@halostatue.ca"
   s.executables = ["minitar"]
