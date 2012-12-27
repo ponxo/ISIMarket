@@ -11,3 +11,13 @@
  *= require_self
  *= require_tree .
  */
+TITULO {
+  color: blue;
+  font-size: 200%;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid DarkSlateGrey;
+}

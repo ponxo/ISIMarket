@@ -1,7 +1,7 @@
 class CreateProductos < ActiveRecord::Migration
   def up
     create_table 'productos' do |t|
-      t.string 'id'
+      # t.string 'id'
       t.string 'categoria'
       t.string 'nombre'
       t.float 'precio_venta'

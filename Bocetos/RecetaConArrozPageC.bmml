@@ -1,0 +1,63 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="860" measuredH="869" mockupW="609" mockupH="768">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="251" y="101" w="609" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::List" x="294" y="214" w="294" h="267" measuredW="100" measuredH="212" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%0A%20%0AIngredientes%3A%0A%09Arroz%0A%09Marisco%0A%09Pollo%0A%09Aceite%0A%20%0AElaboraci%F3n%3A%0A%09Poner%20aceite%20en%20una%20paellera......</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="294" y="221" w="-1" h="-1" measuredW="70" measuredH="33" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Paella</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::List" x="294" y="516" w="294" h="267" measuredW="100" measuredH="254" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%0A%20%0AIngredientes%3A%0A%09Arroz%0A%09Aceite%0A%09Tortilla%20francesa%0A%09Zanahoria%0A%09Jam%F3n%20de%20york%0A....%0A%20%0AElaboraci%F3n%3A%0A%09llenar%20de%20agua............</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::SubTitle" x="294" y="522" w="-1" h="-1" measuredW="170" measuredH="33" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Arroz%203%20delicias</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="340" y="806" w="-1" h="-1" measuredW="37" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pepe</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="393" y="806" w="-1" h="-1" measuredW="94" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Compra%20actual%20%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="502" y="806" w="-1" h="-1" measuredW="27" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>0%20%u20AC</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Link" x="807" y="806" w="-1" h="-1" measuredW="30" measuredH="21" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Salir</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="681" y="806" w="-1" h="-1" measuredW="87" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>ProductsPageC%26bm%3BProductsPageC.bmml%26bm%3BProductsPageC.bmml%26bm%3BProductsPageC.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22430%2C705%2C517%2C726%22%20href%3D%22ProductsPageC.bmml%22%20alt%3D%22ProductsPageC%22%20id%3D%2211%22/%3E</map>
+        <text>Ir%20a%20Productos</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="562" y="806" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>A%F1adirReceta%26bm%3BA%F1adirReceta.bmml%26bm%3BA%F1adirReceta.bmml%26bm%3BA%F1adirReceta.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22311%2C705%2C400%2C726%22%20href%3D%22A%25C3%25B1adirReceta.bmml%22%20alt%3D%22A%F1adirReceta%22%20id%3D%2212%22/%3E</map>
+        <text>A%F1adir%20Receta</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
