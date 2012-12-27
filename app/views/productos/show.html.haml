@@ -1,0 +1,16 @@
+%h2 #{@producto.nombre}
+
+%ul#details
+  %li
+    Precio de venta:
+    = @producto.precio_venta
+  %li
+    Stock:
+    = @producto.stock
+
+%h3 Description:
+
+%p#description= @producto.descripcion
+
+%h3 Recetas:
+=#@producto.recetas

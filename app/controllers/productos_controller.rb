@@ -1,5 +1,10 @@
 class ProductosController < ApplicationController
   def show
+    @producto = Producto.find_by_id(params[:id])
+    if not @producto then
+      flash[:warning]= 'Producto no encontrado'
+      redirect_to productos_path
+    end
   end
   def index
     @productos = Producto.all
