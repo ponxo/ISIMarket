@@ -2,6 +2,7 @@ class RecetasController < ApplicationController
   def show
   end
   def index
+    @recetas = Receta.all
   end
   def new
   end
