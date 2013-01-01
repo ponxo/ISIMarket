@@ -14,13 +14,31 @@ class ProductosController < ApplicationController
     end
   end
   def new
+    # default: render 'new' template
+    # solo disponible para modo encargado
   end
   def create
+    @producto = Producto.create!(params[:producto])
+    flash[:notice] = "#{@producto.nombre} creado."
+    redirect_to producto_path(@producto)
+    # solo disponible para modo encargado
   end
   def edit
+    @producto = Producto.find params[:id]
+    # solo disponible para modo encargado
   end
   def update
+    @producto = Producto.find params[:id]
+    @prodcuto.update_attributes!(params[:prodcuto])
+    flash[:notice] = "#{@producto.name} Acualizado."
+    redirect_to producto_path(@producto)
+    # solo disponible para modo encargado
   end
   def destroy
+    @producto = Producto.find(params[:id])
+    @producto.destroy
+    flash[:notice] = "#{@producto.nombre} eliminado."
+    redirect_to productos_path
+    # solo disponible para modo encargado
   end
 end
