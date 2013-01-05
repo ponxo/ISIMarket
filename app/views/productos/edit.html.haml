@@ -1,0 +1,27 @@
+
+
+%h1 Editar Producto
+
+= form_tag producto_path(@producto), :method => :put do
+  = label :producto, :nombre, 'Nombre del articulo'
+  = text_field :producto, 'nombre'
+
+  = label :producto, :categoria, 'Categoria'
+  = select :producto, :categoria, ['Verdura','Carne','Legumbre','Lacteos','Bebida', 'Otros']
+
+  = label :producto, :precio_venta, 'Precio de venta'
+  = number_field :producto, 'precio_venta', :min => 0.01, :step => 0.01
+  
+  = label :producto, :precio_compra, 'Precio de compra'
+  = number_field :producto, 'precio_compra',:min => 0.01, :step => 0.01
+    
+  = label :producto, :stock, 'Stock'
+  = number_field :producto, 'stock', :min => 0
+  
+  = label :producto, :descripcion, 'Descripción'
+  = text_area :producto, 'descripcion'
+
+  = submit_tag 'Actualizar Información'
+= form_tag producto_path(@producto), :method => :get do
+  = submit_tag 'Cancelar'
+  

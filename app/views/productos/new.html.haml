@@ -1,0 +1,27 @@
+
+
+%h1 Crear Producto
+
+= form_tag productos_path do
+
+  = label :productos, :nombre, 'Nombre del articulo'
+  = text_field :productos, 'nombre'
+
+  = label :productos, :categoria, 'Categoria'
+  = select :productos, :categoria, ['Verdura','Carne','Legumbre','Lacteos','Bebida', 'Otros']
+
+  = label :productos, :precio_venta, 'Precio de venta'
+  = number_field :productos, 'precio_venta', :min => 0.1, :step => 0.1
+  
+  = label :productos, :precio_compra, 'Precio de compra'
+  = number_field :productos, 'precio_compra',:min => 0.1, :step => 0.1
+    
+  = label :productos, :stock, 'Stock'
+  = number_field :productos, 'stock', :min => 0
+  
+  = label :productos, :descripcion, 'Descripción'
+  = text_area :productos, 'descripcion'
+
+  = submit_tag 'Nuevo Producto'
+= form_tag productos_path, :method => :get do
+  = submit_tag 'Cancelar'
