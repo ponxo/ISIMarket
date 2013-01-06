@@ -1,0 +1,14 @@
+%h2 #{@receta.titulo}
+
+%ul#details
+  %li
+    Preparación:
+    = @receta.preparacion
+  %li
+    Puntuación:
+    = @receta.puntuacion
+  %li 
+    Productos asociados
+	
+    - @productos.map do |producto|
+      = producto.nombre

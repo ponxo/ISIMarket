@@ -1,0 +1,22 @@
+
+%h1 Crear Receta
+
+= form_tag recetas_path do
+
+  = label :receta, :titulo, 'Titulo de la Receta'
+  = text_field :receta, 'titulo'
+
+  = label :receta, :preparacion, 'Preparación'
+  = text_area :receta, 'preparacion'
+  
+  = label :receta, :puntuacion, 'Puntuación'
+  = select :receta , 'puntuacion', [5,4,3,2,1]
+  
+  = label :productos , :nombre, 'Productos asociados'
+  - @productos.map do |p|
+    = p.nombre
+    = check_box :p, :nombre
+
+  = submit_tag 'Nueva Receta'
+= form_tag recetas_path, :method => :get do
+  = submit_tag 'Cancelar'

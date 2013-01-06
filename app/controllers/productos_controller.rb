@@ -29,7 +29,7 @@ class ProductosController < ApplicationController
   end
   def update
     @producto = Producto.find params[:id]
-    @prodcuto.update_attributes!(params[:prodcuto])
+    @prodcuto.update_attributes!(params[:prodcutos])
     flash[:notice] = "#{@producto.name} Acualizado."
     redirect_to producto_path(@producto)
     # solo disponible para modo encargado

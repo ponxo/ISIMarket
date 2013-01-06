@@ -1,6 +1,7 @@
 class RecetasController < ApplicationController
   def show
     @receta = Receta.find_by_id(params[:id])
+    @productos = Producto.all # maaaaal hay que ponerle para q sean los productos de esa receta
     if not @receta then
       flash[:warning]= 'Receta no encontrada'
       redirect_to recetas_path
@@ -10,10 +11,11 @@ class RecetasController < ApplicationController
     @recetas = Receta.all
   end
   def new
+    @productos= Producto.all
     # solo disponible para modo cliente
   end
   def create
-    @receta = Receta.create!(params[:producto])
+    @receta = Receta.create!(params[:receta])
     flash[:notice] = "#{@receta.titulo} creada."
     redirect_to receta_path(@receta)
     # solo disponible para modo cliente
