@@ -11,6 +11,10 @@
  *= require_self
  *= require_tree .
  */
+body{ 
+background-color: #87C2F0;  
+}
+ 
 TITULO {
   color: blue;
   font-size: 200%;
@@ -21,3 +25,9 @@ TITULO {
   width: 100%;
   border-bottom: 2px solid DarkSlateGrey;
 }
+
+img{
+  display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	}
