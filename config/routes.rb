@@ -4,7 +4,7 @@ ISIMarket::Application.routes.draw do
   match '/login' => 'sessions#login'
   resources :productos
   resources :recetas
-  resources :cliente
+  resources :clientes
   resources :homepage, :only => [:index]
   
   # The priority is based upon order of creation:

@@ -1,0 +1,26 @@
+%h1 Registrarse
+
+= form_tag clientes_path do
+
+  = label :clientes, :nombre, 'Nombre'
+  = text_field :clientes, 'nombre'
+  
+  = label :clientes, :direccion, 'Dirección'
+  = text_field :clientes, 'direccion'  
+  
+  = label :clientes, :nif, 'NIF'
+  = text_field :clientes, 'nif'
+  
+  = label :clientes, :n_cuenta, 'Número de cuenta'
+  = text_field :clientes, 'n_cuenta'  
+  
+  = label :clientes, :password, 'Contraseña'
+  = password_field :clientes, 'password'  
+  
+  = label :clientes, :password2, 'Repita contraseña'
+  = password_field :clientes, 'password2'    
+  
+  = submit_tag 'Registrarse'
+    
+= form_tag homepage_index_path, :method => :get do
+  = submit_tag 'Cancelar'
