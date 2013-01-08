@@ -31,3 +31,9 @@ img{
 	margin-left: auto;
 	margin-right: auto; 
 	}
+	
+form label {
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+}
