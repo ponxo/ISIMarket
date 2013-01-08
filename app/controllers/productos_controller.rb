@@ -7,7 +7,12 @@ class ProductosController < ApplicationController
     end
   end
   def index
-    @productos = Producto.all
+    @all_categorias = Producto.all_categorias
+    @selected_categorias = params[:categorias] || {}
+    if @selected_categorias == {}
+      @selected_categorias = Hash[@all_categorias.map {|rating| [rating, rating]}]
+    end
+    @productos = Producto.find_all_by_categoria(@selected_categorias.keys)
     if params[:comprado] then
       flash[:notice]= "#{params[:comprado]} incluido en la cesta"
       redirect_to productos_path
@@ -24,13 +29,13 @@ class ProductosController < ApplicationController
     # solo disponible para modo encargado
   end
   def edit
-    @producto = Producto.find params[:id]
+    @producto = Producto.find_by_id(params[:id])
     # solo disponible para modo encargado
   end
   def update
-    @producto = Producto.find params[:id]
-    @prodcuto.update_attributes!(params[:prodcutos])
-    flash[:notice] = "#{@producto.name} Acualizado."
+    @producto = Producto.find_by_id(params[:id])
+    @producto.update_attributes!(params[:producto])
+    flash[:notice] = "#{@producto.nombre} Acualizado."
     redirect_to producto_path(@producto)
     # solo disponible para modo encargado
   end

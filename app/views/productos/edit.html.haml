@@ -7,7 +7,7 @@
   = text_field :producto, 'nombre'
 
   = label :producto, :categoria, 'Categoria'
-  = select :producto, :categoria, ['Verdura','Carne','Legumbre','Lacteos','Bebida', 'Otros']
+  = select :producto, :categoria, ['verdura','carne','legumbre','lacteo','bebida', 'otro']
 
   = label :producto, :precio_venta, 'Precio de venta'
   = number_field :producto, 'precio_venta', :min => 0.01, :step => 0.01

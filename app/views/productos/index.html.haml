@@ -1,5 +1,11 @@
 %h2 Productos
 
+= form_tag productos_path, :method => :get, :id => 'categorias_form' do
+  - @all_categorias.each do |categoria|
+    = categoria
+    = check_box_tag "categorias[#{categoria}]", 1, @selected_categorias.include?(categoria), :id => "categorias_#{categoria}"
+  = submit_tag 'Refresh', :id => 'categorias_submit'
+
 %table#productos
   %thead
     %tr
