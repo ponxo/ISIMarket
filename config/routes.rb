@@ -1,6 +1,6 @@
 ISIMarket::Application.routes.draw do
   
-  root :to => 'hompeage#index'
+  root :to => 'homepage#index'
   match '/login' => 'sessions#login'
   resources :productos
   resources :recetas
