@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121226145458) do
+ActiveRecord::Schema.define(:version => 20121231010815) do
 
   create_table "clientes", :force => true do |t|
     t.string   "nif"
@@ -24,11 +24,16 @@ ActiveRecord::Schema.define(:version => 20121226145458) do
   end
 
   create_table "compras", :force => true do |t|
-    t.string   "n_factura"
     t.float    "coste"
     t.datetime "fecha"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "efectuar_compras", :id => false, :force => true do |t|
+    t.integer "producto_id"
+    t.integer "cliente_id"
+    t.integer "compra_id"
   end
 
   create_table "productos", :force => true do |t|
@@ -40,6 +45,11 @@ ActiveRecord::Schema.define(:version => 20121226145458) do
     t.text     "descripcion"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "productos_recetas", :id => false, :force => true do |t|
+    t.integer "producto_id"
+    t.integer "receta_id"
   end
 
   create_table "recetas", :force => true do |t|
