@@ -17,7 +17,7 @@ class ProductosController < ApplicationController
     if params[:comprado] then
       compra = session[:compra]
       compra[0] = compra[0]+ params[:comprado][1].to_f
-      compra[1] << params[:comprado][1]
+      compra[1] << params[:comprado][0]
       session[:compra]= compra
       flash[:notice]= "#{params[:comprado][0]} incluido en la cesta"
       redirect_to productos_path

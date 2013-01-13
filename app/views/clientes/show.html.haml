@@ -13,5 +13,12 @@
     
 =link_to "editar mis datos", edit_cliente_path(@cliente)
 
-%h2 Última compra
-=@compra[1]
+%h2 Compra Actual
+%ul#details
+  %li 
+    Total:
+    =@compra[0]
+  - if @compra[0] != 0
+    %li
+      Productos:
+      =@compra[1]
