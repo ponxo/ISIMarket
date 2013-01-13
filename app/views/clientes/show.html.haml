@@ -22,3 +22,5 @@
     %li
       Productos:
       =@compra[1]
+= button_to "Efectuar compra", clientes_comprar_path, :method => :get
+= button_to 'Cancelar compra', clientes_cancelar_path, :method => :get

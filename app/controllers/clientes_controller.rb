@@ -22,4 +22,18 @@ class ClientesController < ApplicationController
   end
   def destroy
   end
+  def comprar
+    flash[:notice]="compra realizada con exito, total = #{session[:compra][0]}"
+    total = 0
+	productos = []
+	session[:compra]= [total,productos]
+	redirect_to cliente_path(session[:cliente])
+  end
+  def cancelar
+    flash[:notice]="compra cancelada"
+    total = 0
+	productos = []
+	session[:compra]= [total,productos]
+	redirect_to cliente_path(session[:cliente])
+  end
 end
