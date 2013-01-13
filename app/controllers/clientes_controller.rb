@@ -1,5 +1,7 @@
 class ClientesController < ApplicationController
   def show
+  @compra = session[:compra]
+  @cliente = session[:cliente]
   end
   def index
   end
@@ -7,8 +9,7 @@ class ClientesController < ApplicationController
   end
   def create
 	@cliente = Cliente.create!(params[:clientes])
-	session[:nombre]= @cliente.nombre
-	session[:password]= @cliente.password
+	session[:cliente]= @cliente
 	total = 0
 	productos = []
 	session[:compra]= [total,productos] 

@@ -14,8 +14,8 @@
     
     = yield
 %BARRA 
-- if session[:password]
-  = session[:nombre]
+- if session[:cliente]
+  = link_to "#{session[:cliente].nombre}", cliente_path(session[:cliente])
   compra: 
   = session[:compra][0]
   =link_to 'nueva receta', new_receta_path 

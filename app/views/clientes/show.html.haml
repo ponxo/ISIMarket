@@ -1,0 +1,17 @@
+%h1 #{@cliente.nombre}
+
+%ul#details
+  %li
+    NIF
+    = @cliente.nif
+  %li
+    Número de Cuenta:
+    = @cliente.n_cuenta
+  %li
+    Dirección:
+    = @cliente.direccion
+    
+=link_to "editar mis datos", edit_cliente_path(@cliente)
+
+%h2 Última compra
+=@compra[1]
