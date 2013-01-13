@@ -13,4 +13,8 @@
 %p#description= @producto.descripcion
 
 %h3 Recetas:
-=#@producto.recetas
+-@receta.map do |receta|
+  =receta.titulo
+  -receta.productos.map do |producto|
+    -if producto.nombre == @producto.nombre
+      =link_to "#{receta.titulo}",receta_path(receta)

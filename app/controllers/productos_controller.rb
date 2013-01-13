@@ -1,6 +1,7 @@
 class ProductosController < ApplicationController
   def show
     @producto = Producto.find_by_id(params[:id])
+    @receta=Receta.all
     if not @producto then
       flash[:warning]= 'Producto no encontrado'
       redirect_to productos_path

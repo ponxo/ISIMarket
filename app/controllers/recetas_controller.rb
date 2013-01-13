@@ -1,7 +1,6 @@
 class RecetasController < ApplicationController
   def show
     @receta = Receta.find_by_id(params[:id])
-    @productos = @receta.productos # maaaaal hay que ponerle para q sean los productos de esa receta
     if not @receta then
       flash[:warning]= 'Receta no encontrada'
       redirect_to recetas_path
@@ -16,19 +15,16 @@ class RecetasController < ApplicationController
   end
   def create
     @receta = Receta.create!(params[:receta])
-    @A=Array.new
-    #logger.debug(params.inspect)
-    productos =params[:producto]
-    productos. map do |producto|
+    @productos =params[:producto]
+    @productos.map do |producto|
   	  if producto[1] =='1' then
-  		  @A<< Producto.find_by_nombre(producto[0])
+  		  @producto =Producto.find_by_nombre(producto[0])
+  		  @receta.productos << @producto
   	  end
   	end
-    #@productos = @A
-    #@receta.productos = @productos
     
     flash[:notice] = "#{@receta.titulo} creada."
-   # redirect_to receta_path(@receta)
+    redirect_to receta_path(@receta)
     # solo disponible para modo cliente
   end
   #def edit

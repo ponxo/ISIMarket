@@ -8,6 +8,7 @@ class CreateProductos < ActiveRecord::Migration
       t.float 'precio_compra'
       t.integer 'stock'
       t.text 'descripcion'
+      t.references 'receta'
       #FOTO
       t.timestamps
     end

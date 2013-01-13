@@ -12,10 +12,10 @@
   = label :receta, :puntuacion, 'Puntuación'
   = select :receta , 'puntuacion', [5,4,3,2,1]
   
-  = label :productos , :nombre, 'Productos asociados'
-  - @productos.map do |p|
-    = p.nombre
-    = check_box :p, :nombre
+  = label :producto , :nombre, 'Productos asociados'
+  - @productos.map do |producto|
+    = producto.nombre
+    = check_box :producto, producto.nombre
 
   = submit_tag 'Nueva Receta'
 = form_tag recetas_path, :method => :get do

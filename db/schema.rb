@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20121231010815) do
     t.float    "precio_compra"
     t.integer  "stock"
     t.text     "descripcion"
+    t.integer  "receta_id"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
@@ -52,12 +53,13 @@ ActiveRecord::Schema.define(:version => 20121231010815) do
     t.integer "receta_id"
   end
 
-  create_table "recetas", :force => true do |t|
+  create_table "receta", :force => true do |t|
     t.string   "titulo"
     t.text     "preparacion"
     t.integer  "puntuacion"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "productos_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end
