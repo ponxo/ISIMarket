@@ -19,7 +19,7 @@ class RecetasController < ApplicationController
     @productos.map do |producto|
   	  if producto[1] =='1' then
   		  @producto =Producto.find_by_nombre(producto[0])
-  		  @producto.receta << @receta
+  		  @receta.productos << @producto
   	  end
   	end
     @receta.save
