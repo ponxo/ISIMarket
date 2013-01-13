@@ -15,7 +15,11 @@ class ProductosController < ApplicationController
     end
     @productos = Producto.find_all_by_categoria(@selected_categorias.keys)
     if params[:comprado] then
-      flash[:notice]= "#{params[:comprado]} incluido en la cesta"
+      compra = session[:compra]
+      compra[0] = compra[0]+ params[:comprado][1].to_f
+      compra[1] << params[:comprado][1]
+      session[:compra]= compra
+      flash[:notice]= "#{params[:comprado][0]} incluido en la cesta"
       redirect_to productos_path
     end
   end
