@@ -11,9 +11,11 @@
       #notice.message= flash[:notice]
     - elsif flash[:warning]
       #warning.message= flash[:warning]
-    - if session[:password]
-      = session[:nombre]
-      compra: 
-      = session[:compra][0]
-      =link_to 'nueva receta', new_receta_path
+    
     = yield
+%BARRA 
+- if session[:password]
+  = session[:nombre]
+  compra: 
+  = session[:compra][0]
+  =link_to 'nueva receta', new_receta_path 

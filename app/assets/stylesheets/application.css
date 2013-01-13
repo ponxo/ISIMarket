@@ -25,6 +25,14 @@ TITULO {
   width: 100%;
   border-bottom: 2px solid DarkSlateGrey;
 }
+BARRA {
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid DarkSlateGrey;
+}
 
 img{
   display: block;
