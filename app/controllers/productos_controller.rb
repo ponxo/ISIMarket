@@ -10,7 +10,7 @@ class ProductosController < ApplicationController
     @all_categorias = Producto.all_categorias
     @selected_categorias = params[:categorias] || {}
     if @selected_categorias == {}
-      @selected_categorias = Hash[@all_categorias.map {|rating| [rating, rating]}]
+      @selected_categorias = Hash[@all_categorias.map {|categoria| [categoria, categoria]}]
     end
     @productos = Producto.find_all_by_categoria(@selected_categorias.keys)
     if params[:comprado] then
