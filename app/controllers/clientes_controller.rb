@@ -6,9 +6,9 @@ class ClientesController < ApplicationController
   def new
   end
   def create
-	@cliente = Cliente.create!(params[:cliente])
-	session[:nombre]=params[:nombre]
-	session[:password]=params[:password]
+	@cliente = Cliente.create!(params[:clientes])
+	session[:nombre]= @cliente.nombre
+	session[:password]= @cliente.password
 	flash[:notice]="El usuario #{session[:nombre]} fue registrado con exito."
 	redirect_to productos_path
   end
