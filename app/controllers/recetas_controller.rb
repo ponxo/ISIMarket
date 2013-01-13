@@ -19,10 +19,10 @@ class RecetasController < ApplicationController
     @productos.map do |producto|
   	  if producto[1] =='1' then
   		  @producto =Producto.find_by_nombre(producto[0])
-  		  @receta.productos << @producto
+  		  @producto.receta << @receta
   	  end
   	end
-    
+    @receta.save
     flash[:notice] = "#{@receta.titulo} creada."
     redirect_to receta_path(@receta)
     # solo disponible para modo cliente
