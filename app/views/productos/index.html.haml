@@ -20,7 +20,7 @@
         %td= link_to "#{producto.nombre}",producto_path(producto) 
         %td= producto.categoria
         %td= producto.precio_venta
-        %td= link_to "Recetas con #{producto.nombre}", receta_path(producto.nombre)
+        %td= link_to "Recetas", recetas_path
         %td= link_to "Comprar #{producto.nombre}", productos_path(:comprado => ["#{producto.nombre}", producto.precio_venta])
 
 -# hay que mejorarlo con javascrip (para el link del nombre del producto a la pagina de show) y el css

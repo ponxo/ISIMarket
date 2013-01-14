@@ -4,6 +4,6 @@
   %tbody
     - @recetas.each do |receta|
       %tr
-        %td= receta.titulo 
+        %td= link_to "#{receta.titulo}" , receta_path(receta) 
         %td= receta.preparacion
         %td= receta.puntuacion
