@@ -39,7 +39,16 @@ img{
 	margin-left: auto;
 	margin-right: auto; 
 	}
-	
+#warning{
+  background: orange;
+  margin: 1em 0;
+  padding: 4px;
+}	
+#notice {
+  background: yellow;
+  margin: 1em 0;
+  padding: 4px;
+}	
 form label {
   display: block;
   line-height: 25px;

@@ -47,14 +47,16 @@ class ClientesController < ApplicationController
   
   def entrar
     @cliente= Cliente.find_by_nif(params[:cliente][:nif])
-    if @cliente.nombre  and @cliente.password == params[:cliente][:pass] then
-      session[:cliente]= @cliente
-	  total = 0
-	  productos = []
-	  session[:compra]= [total,productos]
-	  redirect_to productos_path
+    if @cliente  then
+      if @cliente.password == params[:cliente][:pass] then
+        session[:cliente]= @cliente
+	    total = 0
+	    productos = []
+	    session[:compra]= [total,productos]
+	    redirect_to productos_path
+	  end
 	else 
-	  flash[:notice]="fallo de autenticacion"
+	  flash[:warning]="fallo de autenticacion"
 	  redirect_to login_path
 	end
   end
