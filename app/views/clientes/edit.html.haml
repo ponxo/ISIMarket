@@ -1,0 +1,20 @@
+%h1 Actualizar información
+
+= form_tag cliente_path(@cliente), :method => :put do
+
+  = label :cliente, :nombre, 'Nombre'
+  = text_field :cliente, 'nombre'
+  
+  = label :cliente, :direccion, 'Dirección'
+  = text_field :cliente, 'direccion'  
+  
+  = label :cliente, :nif, 'NIF'
+  = text_field :cliente, 'nif'
+  
+  = label :cliente, :n_cuenta, 'Número de cuenta'
+  = text_field :cliente, 'n_cuenta'  
+  
+  = submit_tag 'Actualizar'
+    
+= form_tag cliente_path(@cliente), :method => :get do
+  = submit_tag 'Cancelar'

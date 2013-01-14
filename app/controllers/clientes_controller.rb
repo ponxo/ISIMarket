@@ -17,8 +17,13 @@ class ClientesController < ApplicationController
 	redirect_to productos_path
   end
   def edit
+    @cliente = Cliente.find(params[:id])
   end
   def update
+    @cliente = Cliente.find_by_id(params[:id])
+    @cliente.update_attributes!(params[:cliente])
+    flash[:notice] = "Datos actualizados"
+    redirect_to producto_path(@producto)
   end
   def destroy
   end
