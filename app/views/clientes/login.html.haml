@@ -1,0 +1,14 @@
+%h1 Entrar
+
+= form_tag clientes_entrar_path do
+
+  = label :cliente, :nif, 'NIF'
+  = text_field :cliente, :nif
+  
+  = label :cliente, :pass, 'Contraseña'
+  = password_field :cliente, 'pass'  
+  
+  = submit_tag 'Entrar'
+    
+= form_tag homepage_index_path, :method => :get do
+  = submit_tag 'Cancelar'
