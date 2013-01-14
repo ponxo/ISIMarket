@@ -14,15 +14,22 @@ class ProductosController < ApplicationController
       @selected_categorias = Hash[@all_categorias.map {|categoria| [categoria, categoria]}]
     end
     @productos = Producto.find_all_by_categoria(@selected_categorias.keys)
+    
     if params[:comprado] then
-      compra = session[:compra]
-      compra[0] = compra[0]+ params[:comprado][1].to_f
-      a=compra[1].index(params[:comprado][0]) 
-      if not a then
-        compra[1]<< params[:comprado][0]
-      end
-      session[:compra]= compra
-      flash[:notice]= "#{params[:comprado][0]} incluido en la cesta"
+      if session[:cliente] then 
+        compra = session[:compra]
+        #Evaluamos si estamos comprando el mismo producto dos veces
+        #Aumentamos el coste, pero no duplicamos alimentos
+        compra[0] = compra[0]+ params[:comprado][1].to_f
+        a=compra[1].index(params[:comprado][0]) 
+        if not a then
+          compra[1]<< params[:comprado][0]
+        end
+        session[:compra]= compra
+        flash[:notice]= "#{params[:comprado][0]} incluido en la cesta"
+      else
+        flash[:notice]= "Para efectuar una compra tienes que hacer login antes"       
+      end      
       redirect_to productos_path
     end
   end
