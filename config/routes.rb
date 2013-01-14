@@ -3,7 +3,9 @@ ISIMarket::Application.routes.draw do
   root :to => 'homepage#index'
   get '/clientes/comprar'
   get '/clientes/cancelar'
-  match '/login' => 'sessions#login'
+  post '/clientes/entrar'
+  match '/logout' => 'clientes#logout'
+  match '/login' => 'clientes#login'
   resources :productos
   resources :recetas
   resources :clientes
