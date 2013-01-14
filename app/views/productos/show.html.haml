@@ -17,3 +17,5 @@
   -receta.productos.map do |producto|
     -if producto.nombre == @producto.nombre then
       =link_to "#{receta.titulo}",receta_path(receta)
+      
+=link_to 'Volver a Productos', productos_path

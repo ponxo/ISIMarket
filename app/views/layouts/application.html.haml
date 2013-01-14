@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+%TITULO= link_to "ISIMarket", homepage_index_path
+
 %html
   %head
     %title ISIMarket
@@ -6,7 +9,6 @@
     = javascript_include_tag "application" 
     = csrf_meta_tags 
   %body
-    %TITULO ISIMarket
     - if flash[:notice]
       #notice.message= flash[:notice]
     - elsif flash[:warning]

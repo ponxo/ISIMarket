@@ -15,7 +15,7 @@ body{
 background-color: #87C2F0;  
 }
  
-TITULO {
+TITULO a{
   color: blue;
   font-size: 200%;
   font-style: italic;
@@ -45,7 +45,8 @@ img{
   padding: 4px;
 }	
 #notice {
-  background: yellow;
+  color: white;
+  background: blue;
   margin: 1em 0;
   padding: 4px;
 }	
