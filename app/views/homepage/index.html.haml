@@ -1,5 +1,6 @@
 = image_tag("logo.png")
-= link_to 'Registrarse', new_cliente_path
-= link_to 'Entrar', login_path
-= link_to 'Productos', productos_path
-= link_to 'Recetas', recetas_path
+%links
+  = link_to 'Registrarse', new_cliente_path,:class => "homepage_link"
+  = link_to 'Entrar', login_path,:class => "homepage_link"
+  = link_to 'Productos', productos_path,:class => "homepage_link"
+  = link_to 'Recetas', recetas_path,:class => "homepage_link"

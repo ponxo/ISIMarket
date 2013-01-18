@@ -16,37 +16,38 @@ background-color: #87C2F0;
 }
  
 TITULO a{
-  color: blue;
+  color: #1b80a1;
   font-size: 200%;
-  font-style: italic;
+  font-style: italic bold;
   text-align: center;
   text-decoration: none;
   display: block;
   width: 100%;
-  border-bottom: 2px solid DarkSlateGrey;
+  border-bottom: 2px solid #1b80a1;
 }
+
 BARRA {
   color: black;
   font-style: italic;
   text-decoration: none;
   display: block;
   width: 100%;
-  border-bottom: 2px solid DarkSlateGrey;
+  border-bottom: 2px solid #1b80a1;
 }
 
-img{
-  display: block;
-	margin-left: auto;
-	margin-right: auto; 
-	}
+
+
+	
 #warning{
-  background: orange;
+  color: white;
+  background: #41b3d9;
   margin: 1em 0;
   padding: 4px;
 }	
+
 #notice {
   color: white;
-  background: blue;
+  background: #41b3d9;
   margin: 1em 0;
   padding: 4px;
 }	
@@ -55,3 +56,49 @@ form label {
   line-height: 25px;
   font-weight: bold;
 }
+
+toolbar{
+  margin: 0 0 0;
+  padding: 5px;
+  background-color: #41b3d9;
+  color: white;
+  border-top:4px solid #1b80a1;
+  border-bottom: 4px solid #1b80a1;
+  font-size: 1em;
+  font-style: normal;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  text-align:center;
+}
+
+.barra {
+  color: white;
+  width:100%;
+  text-decoration: none;
+  margin: 8px;
+}
+
+links{
+  padding: 5px;
+  font-size: 25px;
+  font-style: normal;
+  position:absolute;
+  left:0px;
+  right:0px;
+  text-align:center;
+}
+
+.homepage_link{
+  color: black;
+  width:100%;
+  text-decoration: none;
+  margin: 8px;
+}
+
+img{
+  display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	}

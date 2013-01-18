@@ -15,10 +15,12 @@
       #warning.message= flash[:warning]
     
     = yield
+
 %BARRA 
 - if session[:cliente]
-  = link_to "#{session[:cliente].nombre}", cliente_path(session[:cliente])
-  compra: 
-  = session[:compra][0]
-  =link_to 'nueva receta', new_receta_path 
-  = link_to 'Salir', logout_path
+  %toolbar
+    = link_to "#{session[:cliente].nombre}", cliente_path(session[:cliente]), :div => "bar", :class => "barra"  
+    %ins.barra Compra:    
+    %ins.barra= session[:compra][0]
+    = link_to 'Nueva receta', new_receta_path, :div => "bar", :class => "barra"
+    = link_to 'Salir', logout_path, :div => "bar", :class => "barra"
