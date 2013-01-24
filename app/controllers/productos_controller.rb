@@ -6,6 +6,7 @@ class ProductosController < ApplicationController
       flash[:warning]= 'Producto no encontrado'
       redirect_to productos_path
     end
+	render :partial => 'producto', :object => @producto and return if request.xhr?
   end
   def index
     @all_categorias = Producto.all_categorias

@@ -5,7 +5,6 @@
     = categoria
     = check_box_tag "categorias[#{categoria}]", 1, @selected_categorias.include?(categoria), :id => "categorias_#{categoria}"
   = submit_tag 'Refresh', :id => 'categorias_submit'
-
 %table#productos
   %thead
     %tr
@@ -17,10 +16,10 @@
   %tbody
     - @productos.each do |producto|
       %tr
-        %td= link_to "#{producto.nombre}",producto_path(producto) 
+        %td= link_to "#{producto.nombre}",producto_path(producto), :class => 'pop'
         %td= producto.categoria
         %td= producto.precio_venta
         %td= link_to "Recetas", recetas_path
         %td= link_to "Comprar #{producto.nombre}", productos_path(:comprado => ["#{producto.nombre}", producto.precio_venta])
 
--# hay que mejorarlo con javascrip (para el link del nombre del producto a la pagina de show) y el css
+-# hay que mejorarlo con javascript (para el link del nombre del producto a la pagina de show) y el css
